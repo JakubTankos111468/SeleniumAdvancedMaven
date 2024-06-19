@@ -45,19 +45,8 @@ public class ParameterTest {
             numberInput.clear();
             numberInput.sendKeys(String.valueOf(number));
             button.click();
-
-
-          /*  if (expectedPrime) {
-                new WebDriverWait(driver, 5)
-                        .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Optimus approves']")));
-            }else {
-                new WebDriverWait(driver, 5)
-                        .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Optimus is sad']")));
-            }
-
-        }*/
-
     }
+    
     @After
     public void tearDown(){
         driver.quit();

@@ -9,10 +9,6 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 public class WebDriverSingleton {
     private static WebDriver driver;
     private static void initialize() {
-        //initializePhantomJS();
-        //initializeGoogle();
-        /*FirefoxProfile profile = new FirefoxProfile();
-        profile.setPreference("general.useragent.override", "Mozilla/5.0 (Android 4.4; mobile; rv:41.0) Gecko/41.0 Firefox/41.0");*/
         System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
         driver = new FirefoxDriver();
     }
@@ -24,7 +20,6 @@ public class WebDriverSingleton {
     }
 
     private static void initializeGoogle() {
-        //System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
         driver = new ChromeDriver();
     }
 
